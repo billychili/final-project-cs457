@@ -20,6 +20,12 @@ Program  FinalProject \
 	uLightZ <5. 10. 20.> \
 	uNoiseAmp <0. 0. 1.> \
 	uNoiseFreq <.1 .1 2.> \
+	uTol <0 0.01 0.05>					\
+	uSunY <0.0 0.5 10> 				\
+	uTimeScale <0.1 1.0. 2.>         \
+	uNumFacets <5 15 50> \
+	uPower <1000. 5000. 50000.> \
+	uColor {0.08 .15 0.32 .83} 			\
 	uTexUnit 6 \
 
 Texture2D 6 Venus.bmp
