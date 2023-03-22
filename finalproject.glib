@@ -1,19 +1,30 @@
 ##OpenGL GLIB
 #GSTAP
 
-Noise3D 64
+Noise2D 64
+Timer 60
 
 Perspective 70
 LookAt  0 0 3     0 0 0    0 1 0
 
+Texture2D 6 Venus.bmp Mercury.bmp
+
 Vertex   finalproject.vert
 Fragment finalproject.frag
-Program  FinalProject  				
-	uScale <0. 0. 5.> 				\	
-	uKd <0. 0.6 1.0>				\
-	uLightX <-20. 0. 20.> 			\
-	uLightY <-20. 0. 20.> 			\
-	uLightZ <5. 10. 20.> 			\
-	
+Program  FinalProject \
+	uScale <0. 0.07 .25> \
+	uKd <0. .6 1.> \
+	uKs <0. .3 1.> \
+	uLightX <-20. 0. 20.> \
+	uLightY <-20. 0. 20.> \
+	uLightZ <5. 10. 20.> \
+	uNoiseAmp <0. 0. 1.> \
+	uNoiseFreq <.1 .1 2.> \
+	uTexUnit 6 \
 
+Texture2D 6 Venus.bmp
 Sphere 1 200 200
+
+Texture2D 6 Mercury.bmp
+Translate 0 -3 0
+Sphere .5 200 200
